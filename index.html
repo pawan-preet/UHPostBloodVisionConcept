@@ -72,8 +72,6 @@
         /* Header Styles */
         .page-header {
             margin-bottom: 56px;
-            padding-bottom: 32px;
-            border-bottom: 1px solid var(--border);
         }
 
         .page-header h1 {
@@ -918,61 +916,6 @@
             <p class="date">December 29, 2025</p>
         </header>
 
-        <!-- Section 1: Overview -->
-        <div class="section-header">
-            <p class="section-number">1 of 5</p>
-            <h2>Overview</h2>
-            <svg class="decorative" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="40" fill="white" opacity="0.2"/>
-                <circle cx="30" cy="30" r="15" fill="white" opacity="0.3"/>
-            </svg>
-        </div>
-
-        <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 28px; line-height: 1.75;">
-            This report analyzes your blood biomarkers to calculate your biological age and identify areas for health optimization. We've organized your results into actionable insights across three sections:
-        </p>
-
-        <div style="margin-bottom: 36px;">
-            <div style="margin-bottom: 24px;">
-                <h3 style="font-family: 'Fraunces', Georgia, serif; font-size: 17px; font-weight: 500; margin-bottom: 8px; color: var(--text-primary);">1. Health Report</h3>
-                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.65;">Your Blood Age and biomarker grades across 12 health categories—showing where you're thriving and where there's room to improve.</p>
-            </div>
-            <div style="margin-bottom: 24px;">
-                <h3 style="font-family: 'Fraunces', Georgia, serif; font-size: 17px; font-weight: 500; margin-bottom: 8px; color: var(--text-primary);">2. Monitored Issues</h3>
-                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.65;">Key health concerns flagged from your results, ranked by priority with root cause analysis and the specific biomarkers driving each issue.</p>
-            </div>
-            <div>
-                <h3 style="font-family: 'Fraunces', Georgia, serif; font-size: 17px; font-weight: 500; margin-bottom: 8px; color: var(--text-primary);">3. Protocol</h3>
-                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.65;">Your personalized action plan across four areas: Lifestyle (sleep, exercise, stress), Nutrition (dietary changes), Supplements (targeted to your biomarkers), and Diagnostic Tests (follow-up testing to track progress).</p>
-            </div>
-        </div>
-
-        <p style="font-size: 14px; color: var(--text-primary); font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.04em;">What we analyzed:</p>
-        <ul style="list-style: none; margin-bottom: 56px;">
-            <li style="padding-left: 24px; position: relative; margin-bottom: 12px; font-size: 14px; color: var(--text-secondary);">
-                <span style="position: absolute; left: 0; top: 7px; width: 8px; height: 8px; border-radius: 2px; background: var(--primary-coral); opacity: 0.7;"></span>
-                Blood sample collected December 28, 2025
-            </li>
-            <li style="padding-left: 24px; position: relative; margin-bottom: 12px; font-size: 14px; color: var(--text-secondary);">
-                <span style="position: absolute; left: 0; top: 7px; width: 8px; height: 8px; border-radius: 2px; background: var(--primary-coral); opacity: 0.7;"></span>
-                69 biomarkers across heart health, glucose regulation, hormones, inflammation, and more
-            </li>
-            <li style="padding-left: 24px; position: relative; font-size: 14px; color: var(--text-secondary);">
-                <span style="position: absolute; left: 0; top: 7px; width: 8px; height: 8px; border-radius: 2px; background: var(--primary-coral); opacity: 0.7;"></span>
-                Your profile: Male, 32 years old
-            </li>
-        </ul>
-
-        <!-- Section 2: Health Report -->
-        <div class="section-header teal">
-            <p class="section-number">2 of 5</p>
-            <h2>Health Report</h2>
-        </div>
-
-        <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 28px; line-height: 1.75;">
-            Your Health Report distills your Blood Age and Biomarkers to show how your health tracks across key categories.
-        </p>
-
         <!-- Score Cards -->
         <div class="score-grid">
             <div class="score-card">
@@ -1012,10 +955,6 @@
         </div>
 
         <!-- Overview Text -->
-        <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 28px; line-height: 1.75;">
-            We have processed 69 biomarkers to provide you with this comprehensive report.
-        </p>
-
         <!-- Category Grades -->
         <div class="category-grid">
             <div class="category-item">
@@ -1052,14 +991,52 @@
             </div>
         </div>
 
-        <!-- Disclaimer -->
-        <div class="disclaimer">
-            The scores generated are system-generated using unique data shared about your medical history and health background. This report is exclusively intended to be used for health optimization and wellness purposes. These scores are not intended to diagnose or treat disease, or to substitute a physician's consultation. These insights are determined by evaluating current research and may change over time to reflect the most up to date research available.
+        <!-- Grade Legend -->
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; padding: 16px 20px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-subtle);">
+            <span style="font-size: 12px; color: var(--text-tertiary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 8px; display: flex; align-items: center;">Grade Legend:</span>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <div style="width: 24px; height: 24px; border-radius: 6px; background: var(--success); display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; color: white;">A</div>
+                <span style="font-size: 12px; color: var(--text-secondary);">Excellent</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <div style="width: 24px; height: 24px; border-radius: 6px; background: #7BAE7F; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; color: white;">B</div>
+                <span style="font-size: 12px; color: var(--text-secondary);">Good</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <div style="width: 24px; height: 24px; border-radius: 6px; background: var(--warning); display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; color: white;">C</div>
+                <span style="font-size: 12px; color: var(--text-secondary);">Fair</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <div style="width: 24px; height: 24px; border-radius: 6px; background: #C47A4E; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; color: white;">D</div>
+                <span style="font-size: 12px; color: var(--text-secondary);">Poor</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <div style="width: 24px; height: 24px; border-radius: 6px; background: var(--danger); display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; color: white;">F</div>
+                <span style="font-size: 12px; color: var(--text-secondary);">Critical</span>
+            </div>
         </div>
 
-        <!-- Section 3: Monitored Issues -->
+        <!-- Section 1: Summary -->
+        <div class="section-header teal">
+            <p class="section-number">1 of 3</p>
+            <h2>Summary</h2>
+        </div>
+
+        <div class="next-steps-content" style="margin-bottom: 36px;">
+            <p style="font-size: 16px; color: var(--text-primary); font-weight: 500; margin-bottom: 16px;">Key Findings from Your Blood Panel</p>
+
+            <p>Your blood age of <strong style="color: var(--danger);">37 years</strong> is 5 years older than your chronological age of 32, primarily driven by elevated cardiovascular risk markers. Out of 69 biomarkers analyzed, 42 are optimal, 16 are in range, and 11 require attention.</p>
+
+            <p><strong>Primary concerns:</strong> Critically elevated LDL cholesterol (279.8 mg/dL) and insulin resistance (HOMA-IR 3.3) are your highest priority areas. These interconnected issues significantly impact your metabolic and cardiovascular health.</p>
+
+            <p><strong>Areas of strength:</strong> Your kidney health, hormone levels, and blood health markers are all performing well, showing strong foundational health in these areas.</p>
+
+            <p><strong>Recommended focus:</strong> Immediate dietary intervention combined with cardiovascular consultation, along with targeted supplementation for vitamin D insufficiency and inflammation optimization, will help bring your blood age closer to your actual age.</p>
+        </div>
+
+        <!-- Section 2: Monitored Issues -->
         <div class="section-header" style="margin-top: 48px;">
-            <p class="section-number">3 of 5</p>
+            <p class="section-number">2 of 3</p>
             <h2>Monitored Issues</h2>
         </div>
 
@@ -1143,6 +1120,33 @@
                     <p>Recheck full lipid panel including ApoB in 6-8 weeks after dietary changes. If on medication, retest in 4-6 weeks to assess response.</p>
                 </div>
             </div>
+
+            <!-- Recommended Supplements for this issue -->
+            <div style="margin-top: 24px; padding: 20px; background: var(--primary-cream); border-radius: 16px; border: 1px solid var(--border-subtle);">
+                <h4 style="font-size: 13px; font-weight: 600; color: var(--primary-terracotta); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.04em;">Recommended Supplements</h4>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-subtle);">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-sand); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">🐟</div>
+                            <div>
+                                <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Omega-3 Fish Oil</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">2-4g EPA+DHA daily</div>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" style="padding: 8px 16px; font-size: 12px;">Add</button>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-subtle);">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-sand); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">🌿</div>
+                            <div>
+                                <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Berberine</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">500mg 2-3x daily</div>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" style="padding: 8px 16px; font-size: 12px;">Add</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Issue 2: Insulin Resistance -->
@@ -1217,6 +1221,33 @@
                     <p>Consider a 14-day CGM trial to identify your personal glucose triggers and optimize meal timing and composition.</p>
                 </div>
             </div>
+
+            <!-- Recommended Supplements for this issue -->
+            <div style="margin-top: 24px; padding: 20px; background: var(--primary-cream); border-radius: 16px; border: 1px solid var(--border-subtle);">
+                <h4 style="font-size: 13px; font-weight: 600; color: var(--primary-terracotta); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.04em;">Recommended Supplements</h4>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-subtle);">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-sand); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">🌿</div>
+                            <div>
+                                <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Berberine</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">500mg 2-3x daily with meals</div>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" style="padding: 8px 16px; font-size: 12px;">Add</button>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-subtle);">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-sand); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">💎</div>
+                            <div>
+                                <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Magnesium Glycinate</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">300-400mg before bed</div>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" style="padding: 8px 16px; font-size: 12px;">Add</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Issue 3: Vitamin D Deficiency -->
@@ -1260,6 +1291,23 @@
                     <p>Recheck vitamin D levels in 8-12 weeks to ensure you're reaching the 40-60 ng/mL target range.</p>
                 </div>
             </div>
+
+            <!-- Recommended Supplements for this issue -->
+            <div style="margin-top: 24px; padding: 20px; background: var(--primary-cream); border-radius: 16px; border: 1px solid var(--border-subtle);">
+                <h4 style="font-size: 13px; font-weight: 600; color: var(--primary-terracotta); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.04em;">Recommended Supplements</h4>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-subtle);">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-sand); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">☀️</div>
+                            <div>
+                                <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Vitamin D3 + K2</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">4,000-5,000 IU D3 + 100-200mcg K2 daily</div>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" style="padding: 8px 16px; font-size: 12px;">Add</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Issue 4: Inflammation -->
@@ -1299,11 +1347,28 @@
                     <p>Prioritize 7-8 hours of quality sleep, manage stress through meditation or breathwork, and maintain regular exercise—all proven to reduce systemic inflammation.</p>
                 </div>
             </div>
+
+            <!-- Recommended Supplements for this issue -->
+            <div style="margin-top: 24px; padding: 20px; background: var(--primary-cream); border-radius: 16px; border: 1px solid var(--border-subtle);">
+                <h4 style="font-size: 13px; font-weight: 600; color: var(--primary-terracotta); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.04em;">Recommended Supplements</h4>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-subtle);">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-sand); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">🐟</div>
+                            <div>
+                                <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Omega-3 Fish Oil</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">2-4g EPA+DHA daily</div>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" style="padding: 8px 16px; font-size: 12px;">Add</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Section 4: Protocol -->
+        <!-- Section 3: Protocol -->
         <div class="section-header amber" style="margin-top: 48px;">
-            <p class="section-number">4 of 5</p>
+            <p class="section-number">3 of 3</p>
             <h2>Protocol</h2>
         </div>
 
@@ -1403,6 +1468,23 @@
             <div class="protocol-header">
                 <div class="protocol-icon">💊</div>
                 <h3 class="protocol-title">Supplements</h3>
+            </div>
+
+            <!-- Add All Supplements Section -->
+            <div style="margin-bottom: 24px; padding: 20px; background: linear-gradient(135deg, var(--primary-sand) 0%, var(--primary-cream) 100%); border-radius: 16px; border: 2px solid var(--primary-coral);">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+                    <div>
+                        <h4 style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 500; color: var(--text-primary); margin-bottom: 6px;">Complete Supplement Stack</h4>
+                        <p style="font-size: 14px; color: var(--text-secondary);">Add all 4 recommended supplements to your cart</p>
+                        <div style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;">
+                            <span style="padding: 4px 10px; background: var(--bg-card); border-radius: 6px; font-size: 12px; color: var(--text-tertiary);">☀️ Vitamin D3 + K2</span>
+                            <span style="padding: 4px 10px; background: var(--bg-card); border-radius: 6px; font-size: 12px; color: var(--text-tertiary);">🐟 Omega-3</span>
+                            <span style="padding: 4px 10px; background: var(--bg-card); border-radius: 6px; font-size: 12px; color: var(--text-tertiary);">🌿 Berberine</span>
+                            <span style="padding: 4px 10px; background: var(--bg-card); border-radius: 6px; font-size: 12px; color: var(--text-tertiary);">💎 Magnesium</span>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn" id="add-all-btn" style="padding: 14px 28px; font-size: 14px; background: var(--primary-coral); color: white; border: none; font-weight: 600;">Add All to Cart</button>
+                </div>
             </div>
 
             <div class="supplement-card">
@@ -1584,20 +1666,19 @@
             </div>
         </div>
 
-        <!-- Section 5: Next Steps -->
-        <div class="section-header" style="margin-top: 48px;">
-            <p class="section-number">5 of 5</p>
-            <h2>Next Steps</h2>
-        </div>
+        <!-- Next Steps -->
+        <div class="protocol-category" style="margin-top: 48px;">
+            <div class="protocol-header">
+                <div class="protocol-icon">🎯</div>
+                <h3 class="protocol-title">Next Steps</h3>
+            </div>
 
-        <div class="next-steps-content">
-            <p><strong>Schedule a cardiology consultation</strong> given your significantly elevated LDL cholesterol. Discuss whether statin therapy is appropriate for your situation and request advanced testing (ApoB, Lp(a), CAC score).</p>
-
-            <p><strong>Implement lifestyle changes immediately</strong>—diet modifications, exercise routine, and sleep optimization can begin making an impact within days. Small consistent changes compound over time.</p>
-
-            <p><strong>Re-test your blood panel in 8-12 weeks</strong> to assess the impact of interventions and track progress. Focus especially on lipid panel, fasting insulin, HOMA-IR, and vitamin D.</p>
-
-            <p>If you have any questions, connect with the Ultrahuman care team or consult with your healthcare provider.</p>
+            <ul class="protocol-list">
+                <li><strong>Schedule a cardiology consultation</strong> given your significantly elevated LDL cholesterol. Discuss whether statin therapy is appropriate for your situation and request advanced testing (ApoB, Lp(a), CAC score).</li>
+                <li><strong>Implement lifestyle changes immediately</strong>—diet modifications, exercise routine, and sleep optimization can begin making an impact within days. Small consistent changes compound over time.</li>
+                <li><strong>Re-test your blood panel in 8-12 weeks</strong> to assess the impact of interventions and track progress. Focus especially on lipid panel, fasting insulin, HOMA-IR, and vitamin D.</li>
+                <li>If you have any questions, connect with the Ultrahuman care team or consult with your healthcare provider.</li>
+            </ul>
         </div>
 
         <h3 style="font-family: 'Fraunces', Georgia, serif; font-size: 20px; font-weight: 500; margin-bottom: 20px; color: var(--text-primary);">Recommended for you</h3>
@@ -1677,6 +1758,22 @@
                 }, 2000);
             });
         });
+
+        // Add All button special interaction
+        const addAllBtn = document.getElementById('add-all-btn');
+        if (addAllBtn) {
+            addAllBtn.addEventListener('click', function() {
+                this.textContent = 'All 4 Added!';
+                this.style.backgroundColor = '#4A9B7F';
+                this.style.borderColor = '#4A9B7F';
+
+                setTimeout(() => {
+                    this.textContent = 'Add All to Cart';
+                    this.style.backgroundColor = '#E07A5F';
+                    this.style.borderColor = '#E07A5F';
+                }, 2000);
+            });
+        }
 
         // Animate elements on scroll
         const observerOptions = {
